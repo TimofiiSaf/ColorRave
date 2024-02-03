@@ -3,43 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display:ital@0;1&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <header>
       <section>
-        <div>
+        <div class="container">
           <img src="./images/NikeLogo.png" alt="NikeLogo" />
-          <ul>
+          <nav>
+          <ul class="nav-list">
             <li>
-              <a href="#">Main page</a>
+              <a class="nav-list-page" href="#">Main page</a>
             </li>
             <li>
-              <a href="#">Benefits</a>
+              <a class="nav-list-page" href="#">Benefits</a>
             </li>
             <li>
-              <a href="#">Advantages</a>
+              <a class="nav-list-page" href="#">Advantages</a>
             </li>
             <li>
-              <a href="#">Reviews</a>
+              <a class="nav-list-page" href="#">Reviews</a>
             </li>
             <li>
-              <a href="#">Contacts</a>
+              <a class="nav-list-page" href="#">Contacts</a>
             </li>
             <li>
-              <a href="#">Order</a>
+              <a class="nav-list-page" href="#">Order</a>
             </li>
             <li>
-              <a href="#">Ua</a>
-              <a href="#">Eng</a>
+              <a class="lang-button" href="#">Ua</a>
+              <a class="lang-button" href="#">Eng</a>
             </li>
           </ul>
         </div>
       </section>
+      </nav>
     </header>
     <main>
-      <section>
-        <div>
+      <section class="container">
+        <div class="ColoRave-main">
           <img src="./images/NikeLogo.png" alt="NikeLogo" />
           <h3>С&R</h3>
           <h1>ColoRawe</h1>
@@ -52,7 +61,7 @@
           <button>Buy my Nike</button>
         </div>
       </section>
-      <section>
+      <section class="container">
         <div>
           <h4>Premium Quality</h4>
           <img src="/images/Stars.png" alt="StarsPremiumQuality" />
@@ -62,7 +71,7 @@
           <img src="./images/Bus.png" alt="Bus" />
         </div>
       </section>
-      <section>
+      <section class="container">
         <div>
           <h4>Reviews</h4>
           <div>
@@ -90,7 +99,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="container">
         <h4>Order</h4>
         <input type="Write your email" /><button>confirm</button>
         <input type="Your Contry" />
@@ -100,9 +109,28 @@
       </section>
     </main>
     <footer>
-      <p>Have a question?</p>
-      <p>Have a proposal for cooperation?</p>
-      <p>Adversiting questions?</p>
+      <section class="container">
+        <p>Have a question?</p>
+        <p>Have a proposal for cooperation?</p>
+        <p>Adversiting questions?</p>
+      </section>
+      <section>
+        <div>
+          <a href="">ColoRawe_support@gmail.com</a>
+          <a href="">ColoRawe_Cooperation@gmail.com</a>
+          <a href="">ColoRawe_Advertising@gmail.com</a>
+        </div>
+      </section>
+      <section class="container">
+        <div>
+          <p>2022 ColoRave @All rights sreserved</p>
+          <p>United States</p>
+        </div>
+        <div>
+          <img src="./images/NikeLogo.png" alt="NikeLogo" />
+          <p>C&R</p>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

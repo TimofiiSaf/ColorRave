@@ -1,0 +1,36 @@
+.container {
+}
+
+header {
+  background-color: #012d63;
+}
+ul {
+  list-style-type: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+button {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list {
+}
+
+.nav-list-page {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+.lang-button {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+.ColoRave-main {
+  background-image: ;
+}
