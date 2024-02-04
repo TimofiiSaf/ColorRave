@@ -1,14 +1,22 @@
 .container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 header {
   background-color: #012d63;
+  width: 1440px;
+  height: 90px;
 }
 ul {
   list-style-type: none;
 }
 
 p,
+body,
+ul,
+li,
 h1,
 h2,
 h3,
@@ -19,11 +27,21 @@ button {
 }
 
 .nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo {
+  margin-top: 30px;
 }
 
 .nav-list-page {
+  display: flex;
+  margin-bottom: 30px;
   text-decoration: none;
   color: #c7c7c7;
+  gap: 20px;
 }
 
 .lang-button {
@@ -31,6 +49,45 @@ button {
   color: #c7c7c7;
 }
 
-.ColoRave-main {
-  background-image: ;
+.hero {
+  background-image: url("./images/HeroImage.png");
+  width: 1440px;
+  height: 858px;
+}
+
+.hero-title {
+  color: #ffff;
+  font-size: ;
+}
+
+.hero-h2 {
+  color: #ffff;
+  width: 540px;
+  height: 96px;
+}
+
+.hero-h3 {
+  color: #ffff;
+  width: 178px;
+  height: 86px;
+}
+
+.hero-button {
+  background-color: #8e32c6;
+  color: #ffff;
+  width: 254px;
+  height: 67px;
+  border-radius: 9px;
+  text-align: center;
+}
+
+.hero-text {
+  color: #ffff;
+  width: 508px;
+  height: 84px;
+}
+
+.button-text {
+  width: 132px;
+  height: 28px;
 }
