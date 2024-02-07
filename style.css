@@ -57,19 +57,15 @@ button {
 
 .hero-title {
   color: #ffff;
-  font-size: ;
+  font-size: xx-large;
 }
 
 .hero-h2 {
   color: #ffff;
-  width: 540px;
-  height: 96px;
 }
 
 .hero-h3 {
   color: #ffff;
-  width: 178px;
-  height: 86px;
 }
 
 .hero-button {
@@ -83,11 +79,7 @@ button {
 
 .hero-text {
   color: #ffff;
-  width: 508px;
-  height: 84px;
 }
 
 .button-text {
-  width: 132px;
-  height: 28px;
 }
