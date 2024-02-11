@@ -3,148 +3,235 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display:ital@0;1&family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.cssw">
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.cssw"
+    />
+    <title>ColoRawe</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <section class="header">
-        <div class="container header-list">
-          <img class="logo" src="./images/NikeLogo.png" alt="NikeLogo" />
-          <nav class="navigation" >
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header-logo"
+          ><img class="logo" src="./images/NikeLogo.png" alt="NikeLogo"
+        /></a>
+        <nav class="navigation">
           <ul class="nav-list">
-            <li>
+            <li class="nav-list-item">
               <a class="nav-list-page" href="#">Main page</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-list-page" href="#">Benefits</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-list-page" href="#">Advantages</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-list-page" href="#">Reviews</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-list-page" href="#">Contacts</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-list-page" href="#">Order</a>
             </li>
           </ul>
-            </nav>
-            <ul class="lang">
-            <li class="lang-list">
-               <a class="lang-button" href="#">Ua</a> 
-              </li>
-            <li>
-              <a class="lang-button" href="#">Eng</a>
-            </li>
-          </ul>
-          
-        </div>
-      </section>
-      
+        </nav>
+        <ul class="lang-list">
+          <li class="lang-list-item">
+            <a class="lang-list-link" href="#">Ua</a>
+          </li>
+          <li>
+            <a class="lang-list-link" href="#">Eng</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <div  class="container">
+        <div class="container">
           <img class="hero-logo" src="./images/NikeLogo.png" alt="NikeLogo" />
-          <h3 class="hero-h3">С&R</h3>
+          <span class="hero-sign">С&R</span>
           <h1 class="hero-title">ColoRawe</h1>
-          <h2 class="hero-h2">Your dream Nike</h2>
+          <h2 class="hero-subtitle">Your dream Nike</h2>
           <p class="hero-text">
-            On this site you can find custom Nike sneakers of your dreams.<br> The
-            original company caт`t create such beautiful<br> sneakers as we do.<br> Good
-            luck finding your way in the world of custom sneakers.
+            On this site you can find custom Nike sneakers of your dreams.<br />
+            The original company caт`t create such beautiful<br />
+            sneakers as we do.<br />
+            Good luck finding your way in the world of custom sneakers.
           </p>
           <button class="hero-button">Buy my Nike</button>
         </div>
       </section>
       <section class="adventages">
         <div class="container">
-          <div class="adventages-container">
-          <ul class="advantages-list">
-            <li class="adventages-list-item">
-          <h4 class="adventages-list-title">Premium Quality</h4>
-          <img class="adventages-list-img" src="/images/Stars.png" alt="StarsPremiumQuality" />
-          </li>
-          <li>
-          <img class="adventages-list-img" src="./images/paints.png" alt="Paints" />
-         </li> 
-         <li>
-          <h4 class="adventages-list-title">Indelible paint</h4>
-          </li>
-          <li>
-          <h4 class="adventages-list-title">Fast shipping</h4>
-          <img class="adventages-list-img" src="./images/Bus.png" alt="Bus" />
-          </li>
-          </ul>
+          <div class="adventages-box">
+            <ul class="advantages-list">
+              <li class="adventages-list-item">
+                <h4 class="adventages-list-title">Premium Quality</h4>
+                <img
+                  class="adventages-list-img"
+                  src="/images/Stars.png"
+                  alt="StarsPremiumQuality"
+                />
+              </li>
+              <li>
+                <img
+                  class="adventages-list-img"
+                  src="./images/paints.png"
+                  alt="Paints"
+                />
+                <h4 class="adventages-list-title">Indelible paint</h4>
+              </li>
+              <li>
+                <h4 class="adventages-list-title">Fast shipping</h4>
+                <img
+                  class="adventages-list-img"
+                  src="./images/Bus.png"
+                  alt="Bus"
+                />
+              </li>
+            </ul>
           </div>
         </div>
       </section>
       <section class="reviews">
         <div class="container">
-          <h4 class="reviews-title">Reviews</h4>
-          <div class="reviews-list" >
-            <p class="reviews-list-text">
-              Sneakers are very comfortable and well painted, nothing has worn
-              off in a year.
-            </p>
-            <p class="reviews-list-user">John Teylor</p>
-            <p class="reviews-list-date">With us from 2018</p>
-            <p class="reviews-list-text">
-              I'm very happy with this color scheme. They match all my clothes.
-            </p>
-            <p>Elizabeth Garsia</p>
-            <p>With us from 2020</p>
-            <p class="reviews-list-text">
-              Just right if you need to go to a party. I use them actively, the
-              paint is super.
-            </p>
-            <p>Tom Maquare</p>
-            <p>With us from 2019</p>
+          <h2 class="reviews-title">Reviews</h2>
+          <div class="reviews-container">
+            <div class="reviews-box">
+              <p class="reviews-container-text">
+                Sneakers are very comfortable and well painted, nothing has worn
+                off in a year.
+              </p>
+              <p class="reviews-container-data">25.11</p>
+              <div class="reviews-users">
+                <img
+                  src="./images/John.png"
+                  alt="John Taylor"
+                  class="reviews-users-img"
+                />
+                <div class="users-info">
+                  <p class="users-info-name">John Teylor</p>
+                  <p class="users-info-date">With us from 2018</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-box">
+              <p class="reviews-container-text">
+                I'm very happy with this color scheme. They match all my
+                clothes.
+              </p>
+              <p class="reviews-container-data">05.01</p>
+              <div class="reviews-users">
+                <img
+                  src="./images/Liza.png"
+                  alt="Liza"
+                  class="reviews-users-img"
+                />
+                <div class="users-info">
+                  <p class="users-info-name">Elizabeth Garsia</p>
+                  <p class="users-info-date">With us from 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-box">
+              <p class="reviews-container-text">
+                Just right if you need to go to a party. I use them actively,
+                the paint is super.
+              </p>
+              <p class="reviews-container-data">18.06</p>
+              <div class="reviews-users">
+                <img
+                  src="./images/Tom.png"
+                  alt="Tom"
+                  class="reviews-users-img"
+                />
+                <div class="users-info">
+                  <p class="users-info-name">Tom Maquare</p>
+                  <p class="users-info-date">With us from 2019</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="container">
-        <h4>Order</h4>
-        <input type="Write your email" /><button>confirm</button>
-        <input type="Your Contry" />
-        <input type="Your City" />
-        <input type="Your Adress" />
-        <button>Order my Nike</button>
+      <section class="order">
+        <div class="container">
+          <h2 class="order-title">Order</h2>
+          <form class="order-form">
+            <input
+              type="email"
+              class="order-input"
+              placeholder="Write your email"
+            />
+            <input
+              type="text"
+              class="order-adress-input"
+              placeholder="Your Contry"
+            />
+            <input
+              type="text"
+              class="order-adress-input"
+              placeholder="Your City"
+            />
+            <input
+              type="text"
+              class="order-adress-input"
+              placeholder="Your Adress"
+            />
+            <button type="submit" class="order-button">Order my Nike</button>
+          </form>
+        </div>
       </section>
     </main>
-    <footer>
-      <section class="container">
-        <p>Have a question?</p>
-        <p>Have a proposal for cooperation?</p>
-        <p>Adversiting questions?</p>
-      </section>
-      <section>
-        <div>
-          <a href="">ColoRawe_support@gmail.com</a>
-          <a href="">ColoRawe_Cooperation@gmail.com</a>
-          <a href="">ColoRawe_Advertising@gmail.com</a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-contacts">
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <p>Have a question?</p>
+              <a href="mailto:ColoRawe_support@gmail.com"
+                >ColoRawe_support@gmail.com</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <p>Have a proposal for cooperation?</p>
+              <a href="mailto:ColoRawe_Cooperation@gmail.com"
+                >ColoRawe_Cooperation@gmail.com</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <p>Adversiting questions?</p>
+              <a href="mailto:ColoRawe_Advertising@gmail.com"
+                >ColoRawe_Advertising@gmail.com</a
+              >
+            </li>
+          </ul>
         </div>
-      </section>
-      <section class="container">
-        <div>
-          <p>2022 ColoRave @All rights sreserved</p>
-          <p>United States</p>
+        <div class="footer-info">
+          <div class="footer-rights">
+            <p class="footer-rights-text">2022 ColoRave @All rights reserved</p>
+            <p class="footer-rights-US">United States</p>
+          </div>
+          <div class="footer-brand">
+            <img
+              class="footer-brand-logo"
+              src="./images/NikeLogo.png"
+              alt="NikeLogo"
+            />
+            <span class="footer-brand-sign">C&R</span>
+          </div>
         </div>
-        <div>
-          <img src="./images/NikeLogo.png" alt="NikeLogo" />
-          <p>C&R</p>
-        </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
