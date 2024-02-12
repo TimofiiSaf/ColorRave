@@ -34,15 +34,13 @@ button {
   padding: 0 15px;
 }
 
-body {
+/* body {
   font-family: "Roboto", sans-serif;
   font-weight: 300, 400;
   font-size: 24px;
   font-style: normal;
   line-height: normal;
-  color: var(--white-color);
-  background-color: var(#012d63);
-}
+} */
 
 .header {
   background-color: #012d63;
@@ -106,7 +104,7 @@ body {
 }
 
 .hero {
-  background-image: url("./images/HeroImage.png");
+  background-image: url("../images/HeroImage.png");
   width: 1440px;
   height: 858px;
 }
