@@ -9,7 +9,8 @@ h1,
 h2,
 h3,
 h4,
-button {
+button,
+img {
   padding: 0;
   margin: 0;
 }
@@ -34,13 +35,13 @@ button {
   padding: 0 15px;
 }
 
-/* body {
+body {
   font-family: "Roboto", sans-serif;
   font-weight: 300, 400;
   font-size: 24px;
   font-style: normal;
   line-height: normal;
-} */
+}
 
 .header {
   background-color: #012d63;
@@ -48,7 +49,9 @@ button {
   height: 90px;
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-logo {
@@ -61,6 +64,7 @@ button {
 .nav-list {
   display: flex;
   gap: 30px;
+  display: flex;
 }
 
 .nav-list-page {
@@ -127,7 +131,7 @@ button {
   text-transform: none;
 }
 
-.hero-h2 {
+.hero-subtitle {
   color: #fff;
   font-size: 72px;
   font-style: normal;
@@ -175,26 +179,35 @@ button {
 }
 
 .adventages {
-  background-image: url("./images/adventages.png");
-  width: 1440px;
-  height: 606px;
+  display: flex;
+  background-image: url("../images/adventages.png");
   width: 100%;
   height: auto;
   margin: 0;
-  display: block;
-  max-width: 1115px;
-  max-height: 401px;
+  max-width: 1440px;
+  max-height: 606px;
   border: #8e32c6 5px;
+  background-size: 1440px x 606px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .adventages-box {
-  width: 100%;
+  display: flex;
+  width: 1110px;
+  height: 396px;
+  display: block;
+  border: 5px solid #8e32c6;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adventages-line {
+  width: 1.0000152587890625px;
   height: auto;
   margin: 0;
   display: block;
-  max-width: 1115px;
-  max-height: 401px;
-  border: #8e32c6, 131231px;
+  transform: rotate(90deg);
 }
 
 .adventages-list-title {
@@ -220,12 +233,73 @@ button {
 }
 
 .reviews {
-  background-image: url("./images/Reviews.png");
-  width: 100%;
-  height: auto;
+  display: flex;
+  background-image: url("../images/Reviews.png");
+  width: 1440px;
+  height: 520px;
+  margin: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviews-box:nth-child(1) {
+  width: 255px;
+  height: 285px;
   margin: 0;
   display: block;
-  max-width: 1440px;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  padding-left: 13px;
+  padding-right: 13px;
+  box-shadow: 0 30px 0-13px #533978, 0 14px 0-5px #7b54b2;
+  border-radius: 15px 15px 15px 15px;
+  background-image: linear-gradient(
+    to bottom right,
+    #00e5e6,
+    #00a8f7,
+    #9a76f9,
+    #cc5ec2
+  );
+}
+
+.reviews-box:nth-child(2) {
+  width: 255px;
+  height: 285px;
+  margin: 0;
+  display: block;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  padding-left: 13px;
+  padding-right: 13px;
+  box-shadow: 0 30px 0-13px #61337c, 0 14px 0-5px #9159b1;
+  border-radius: 15px 15px 15px 15px;
+  background-image: linear-gradient(
+    to bottom right,
+    #ff68b4,
+    #ff45e1,
+    #ce3aff,
+    #8961ff
+  );
+}
+
+.reviews-box:nth-child(3) {
+  width: 255px;
+  height: 285px;
+  margin: 0;
+  display: block;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  padding-left: 13px;
+  padding-right: 13px;
+  box-shadow: 0 30px 0-13px #732f26, 0 14px 0-5px #b95a4c;
+  border-radius: 15px 15px 15px 15px;
+  background-image: linear-gradient(
+    to bottom right,
+    #ffe128,
+    #ff9b5c,
+    #ff8381,
+    #ff5489
+  );
 }
 
 .reviews-title {
@@ -237,6 +311,15 @@ button {
   line-height: normal;
   letter-spacing: 0;
   text-transform: none;
+}
+
+.reviews-users {
+  margin-top: 45px;
+}
+
+.reviews-user-img {
+  float: left;
+  margin-right: 5px;
 }
 
 .reviews-container-text {
