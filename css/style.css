@@ -120,6 +120,8 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 105px;
 }
 
 .hero-logo {
@@ -188,7 +190,6 @@ body {
 }
 
 .adventages {
-  display: flex;
   background-image: url("../images/adventages.png");
   width: 100%;
   height: auto;
@@ -198,8 +199,8 @@ body {
   background-repeat: no-repeat;
   border: #8e32c6 5px;
   background-size: 1440px x 606px;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 105px;
+  padding-bottom: 105px;
 }
 
 .adventages .container {
@@ -211,13 +212,10 @@ body {
 }
 
 .adventages-box {
-  display: flex;
   width: 1110px;
   height: 396px;
   display: block;
   border: 5px solid #8e32c6;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .adventages-line {
@@ -275,11 +273,12 @@ body {
   margin: 0;
   display: block;
   padding-top: 45px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-left: 13px;
   padding-right: 13px;
   box-shadow: 0 30px 0-13px #533978, 0 14px 0-5px #7b54b2;
   border-radius: 15px 15px 15px 15px;
+  margin-right: 90px;
   background-image: linear-gradient(
     to bottom right,
     #00e5e6,
@@ -295,11 +294,12 @@ body {
   margin: 0;
   display: block;
   padding-top: 45px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-left: 13px;
   padding-right: 13px;
   box-shadow: 0 30px 0-13px #61337c, 0 14px 0-5px #9159b1;
   border-radius: 15px 15px 15px 15px;
+  margin-right: 90px;
   background-image: linear-gradient(
     to bottom right,
     #ff68b4,
@@ -315,7 +315,7 @@ body {
   margin: 0;
   display: block;
   padding-top: 45px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-left: 13px;
   padding-right: 13px;
   box-shadow: 0 30px 0-13px #732f26, 0 14px 0-5px #b95a4c;
@@ -401,6 +401,13 @@ body {
   margin-bottom: 0;
   letter-spacing: 0;
   text-transform: none;
+}
+
+.order {
+  background-image: url("../images/Order.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .order-input {
