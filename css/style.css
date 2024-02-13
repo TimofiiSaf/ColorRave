@@ -1,8 +1,13 @@
 :root {
   --white-color: #fff;
+  --bg: #012d63;
+  --btn: #8e32c6;
+  --input-color: #959595;
+  --lang: #dcdcdc;
+  --date: #d8d8d8;
+  --footer: #021635;
 }
 p,
-body,
 ul,
 li,
 h1,
@@ -37,16 +42,19 @@ button {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 300, 400;
+  font-weight: 400;
   font-size: 24px;
   font-style: normal;
   line-height: normal;
+  color: var(--white-color);
 }
 
 .header {
   background-color: #012d63;
-  width: 1440px;
-  height: 90px;
+  padding: 16px 0;
+}
+
+.header .container {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -109,8 +117,9 @@ body {
 
 .hero {
   background-image: url("../images/HeroImage.png");
-  width: 1440px;
-  height: 858px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-logo {
@@ -184,11 +193,20 @@ body {
   width: 100%;
   height: auto;
   margin: 0;
-  max-width: 1440px;
-  max-height: 606px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border: #8e32c6 5px;
   background-size: 1440px x 606px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.adventages .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
@@ -235,11 +253,20 @@ body {
 .reviews {
   display: flex;
   background-image: url("../images/Reviews.png");
-  width: 1440px;
-  height: 520px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
   align-items: center;
   justify-content: space-between;
+  padding: 105px 0px 105px;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .reviews-box:nth-child(1) {
@@ -314,6 +341,7 @@ body {
 }
 
 .reviews-users {
+  display: flex;
   margin-top: 45px;
 }
 
