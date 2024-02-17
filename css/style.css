@@ -212,18 +212,24 @@ body {
 }
 
 .adventages-box {
+  display: flex;
   width: 1110px;
-  height: 396px;
-  display: block;
+  height: 400px;
   border: 5px solid #8e32c6;
+}
+.adventages-list {
+  display: flex;
+  gap: 95px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 25px 50px;
 }
 
 .adventages-line {
-  width: 1.0000152587890625px;
-  height: auto;
+  height: 346px;
   margin: 0;
   display: block;
-  transform: rotate(90deg);
 }
 
 .adventages-list-title {
@@ -250,10 +256,11 @@ body {
 
 .reviews {
   display: flex;
-  background-image: url("../images/Reviews.png");
-  background-position: center;
+  background-image: url("../images/Reviews-flower.png"),
+    url("../images/Reviews.png");
+  background-position: left bottom, center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
   margin: 0;
   align-items: center;
   justify-content: space-between;
@@ -267,17 +274,17 @@ body {
   text-align: center;
 }
 
-.reviews-box:nth-child(1) {
+.reviews-box {
   width: 255px;
-  height: 285px;
-  margin: 0;
-  display: block;
   padding-top: 45px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   padding-left: 13px;
   padding-right: 13px;
-  box-shadow: 0 30px 0-13px #533978, 0 14px 0-5px #7b54b2;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
+}
+
+.reviews-box:nth-child(1) {
+  box-shadow: 0 14px 0-5px #7b54b2, 0 30px 0-13px #533978;
   margin-right: 90px;
   background-image: linear-gradient(
     to bottom right,
@@ -289,16 +296,7 @@ body {
 }
 
 .reviews-box:nth-child(2) {
-  width: 255px;
-  height: 285px;
-  margin: 0;
-  display: block;
-  padding-top: 45px;
-  padding-bottom: 10px;
-  padding-left: 13px;
-  padding-right: 13px;
-  box-shadow: 0 30px 0-13px #61337c, 0 14px 0-5px #9159b1;
-  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 14px 0-5px #7b54b2, 0 30px 0-13px #533978;
   margin-right: 90px;
   background-image: linear-gradient(
     to bottom right,
@@ -310,16 +308,7 @@ body {
 }
 
 .reviews-box:nth-child(3) {
-  width: 255px;
-  height: 285px;
-  margin: 0;
-  display: block;
-  padding-top: 45px;
-  padding-bottom: 10px;
-  padding-left: 13px;
-  padding-right: 13px;
-  box-shadow: 0 30px 0-13px #732f26, 0 14px 0-5px #b95a4c;
-  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 14px 0-5px #b95a4c, 0 30px 0-13px #732f26;
   background-image: linear-gradient(
     to bottom right,
     #ffe128,
@@ -345,11 +334,6 @@ body {
   margin-top: 45px;
 }
 
-.reviews-user-img {
-  float: left;
-  margin-right: 5px;
-}
-
 .reviews-container-text {
   color: #fff;
   font-size: 24px;
@@ -373,6 +357,7 @@ body {
   line-height: normal;
   letter-spacing: 0;
   text-transform: none;
+  text-align: left;
 }
 
 .users-info-name {
@@ -387,6 +372,7 @@ body {
   margin-bottom: 0;
   letter-spacing: 0;
   text-transform: none;
+  margin-left: 10px;
 }
 
 .users-info-date {
@@ -401,6 +387,13 @@ body {
   margin-bottom: 0;
   letter-spacing: 0;
   text-transform: none;
+  margin-left: 10px;
+}
+
+.order .container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .order {
@@ -408,28 +401,37 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.order-title {
+  color: var(--white-color);
+  font-size: 48px;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .order-input {
-  width: 100%;
   width: 690px;
   height: 60px;
-  height: auto;
   margin: 0;
   display: block;
-  max-width: 690px;
   border-radius: 50px 50px 50px 50px;
+  border-style: none;
 }
 
 .order-adress-input {
   width: 580px;
   height: 50px;
-  width: 100%;
-  height: auto;
   margin: 0;
   display: block;
-  max-width: 580px;
   border-radius: 50px 50px 50px 50px;
+  border-style: none;
 }
 
 .order-button {
@@ -450,4 +452,8 @@ body {
   border: none;
   border-radius: 10px;
   text-align: center;
+}
+
+footer {
+  background-color: var(--footer);
 }
