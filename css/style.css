@@ -15,7 +15,8 @@ h2,
 h3,
 h4,
 button,
-img {
+img,
+body {
   padding: 0;
   margin: 0;
 }
@@ -57,8 +58,6 @@ body {
 .header .container {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
 }
 
@@ -93,12 +92,9 @@ body {
   color: #ffff;
 }
 
-.lang {
-  display: flex;
-  gap: 30px;
-}
 .lang-list {
-  gap: 30px;
+  display: flex;
+  gap: 10px;
 }
 
 .lang-list-link {
@@ -259,7 +255,7 @@ body {
   background-image: url("../images/Reviews-flower.png"),
     url("../images/Reviews.png");
   background-position: left bottom, center;
-  background-size: cover;
+  background-size: 226px 380px, cover;
   background-repeat: no-repeat, no-repeat;
   margin: 0;
   align-items: center;
@@ -326,7 +322,8 @@ body {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0;
-  text-transform: none;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .reviews-users {
@@ -414,15 +411,26 @@ body {
   line-height: normal;
   letter-spacing: 0;
   text-transform: none;
+  margin-bottom: 33px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .order-input {
   width: 690px;
   height: 60px;
   margin: 0;
+  font-size: 24px;
   display: block;
   border-radius: 50px 50px 50px 50px;
   border-style: none;
+  padding-left: 25px;
+  color: #959595;
 }
 
 .order-adress-input {
@@ -430,8 +438,10 @@ body {
   height: 50px;
   margin: 0;
   display: block;
+  font-size: 24px;
   border-radius: 50px 50px 50px 50px;
   border-style: none;
+  padding-left: 25px;
 }
 
 .order-button {
@@ -456,4 +466,55 @@ body {
 
 footer {
   background-color: var(--footer);
+  padding: 45px 0 35px 0;
+}
+
+.footer-contacts {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--input-color);
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-list-text {
+  font-size: 24px;
+  color: var(--white-color);
+}
+
+.footer-list-link {
+  font-size: 24px;
+  color: var(--white-color);
+  text-decoration: underline;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  font-size: 18px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-rights-text {
+  margin-bottom: 7px;
+}
+
+.footer-brand-sign {
+  font-family: "PT Serif", serif;
 }
