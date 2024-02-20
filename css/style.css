@@ -265,7 +265,7 @@ body {
 
 .reviews-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
@@ -281,7 +281,7 @@ body {
 
 .reviews-box:nth-child(1) {
   box-shadow: 0 14px 0-5px #7b54b2, 0 30px 0-13px #533978;
-  margin-right: 90px;
+
   background-image: linear-gradient(
     to bottom right,
     #00e5e6,
@@ -293,7 +293,7 @@ body {
 
 .reviews-box:nth-child(2) {
   box-shadow: 0 14px 0-5px #7b54b2, 0 30px 0-13px #533978;
-  margin-right: 90px;
+
   background-image: linear-gradient(
     to bottom right,
     #ff68b4,
@@ -355,6 +355,7 @@ body {
   letter-spacing: 0;
   text-transform: none;
   text-align: left;
+  margin-top: 8px;
 }
 
 .users-info-name {
